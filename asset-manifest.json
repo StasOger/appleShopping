@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/appleShopping/static/css/main.5a9de75e.css",
+    "main.js": "/appleShopping/static/js/main.b93b478a.js",
+    "static/media/IMG_apple.JPG": "/appleShopping/static/media/IMG_apple.c605867cd115be0df5eb.JPG",
+    "index.html": "/appleShopping/index.html",
+    "main.5a9de75e.css.map": "/appleShopping/static/css/main.5a9de75e.css.map",
+    "main.b93b478a.js.map": "/appleShopping/static/js/main.b93b478a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a9de75e.css",
+    "static/js/main.b93b478a.js"
+  ]
+}

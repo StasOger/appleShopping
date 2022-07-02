@@ -5,11 +5,9 @@ import React, {useState} from 'react';
 import { FaShoppingCart } from "react-icons/fa";
 import Order from './Order';
 // import App from 'App';
+import ContactUs from './contactForm';
 
 const showOrders = (props) => {
-
-  
-
   let summa = 0
   props.orders.forEach(el => summa += Number.parseFloat(el.price))
   return(<div>
@@ -21,7 +19,11 @@ const showOrders = (props) => {
   </div>)
 }
 
-
+const showForm = () => {
+  return(<div name='form'>
+     <ContactUs/>
+  </div>
+)}
 
 const showNothing = () => {
   return (<div className='empty'>
@@ -35,26 +37,38 @@ export default function Header(props) {
 
 let [cartOpen, setCartOpen] = useState(false)
 
+let [formOpen, setFormOpen] = useState(false)
+
   return (
       <header>
           <div>
               <span className='logo'>AppleJobing</span>
                 <ul className='nav'>
-                  <li>Mac</li>
-                  <li>Iphone</li>
-                  <li>AirPods</li>
-                  <li>IWatch</li>
-                  
+                  <li 
+                    onClick={() => setFormOpen(formOpen = !formOpen)} 
+                    className={`form-button ${formOpen && 'active'}`}>
+                    
+                    Chekout
+                    
+                  </li>
+                  {formOpen && (
+                    <div className='form'>
+                        {props.orders.length > 0 ?
+                        showForm(props) : showNothing()}
+                    </div>)}
                 </ul>
+                
                   <FaShoppingCart 
                   onClick={() => setCartOpen(cartOpen = !cartOpen)} 
                   className={`shop-cart-button ${cartOpen && 'active'}`}
                   />
-                {cartOpen && (
-                  <div className='shop-cart'>
-                      {props.orders.length > 0 ?
-                      showOrders(props) : showNothing()}
-                  </div>)}
+                  
+                  {cartOpen && (
+                    <div className='shop-cart'>
+                        {props.orders.length > 0 ?
+                        showOrders(props) : showNothing()}
+                    </div>)}
+                
           </div>
           <div className='presentation'>
           </div>

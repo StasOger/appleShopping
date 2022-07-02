@@ -182,6 +182,87 @@ header {
     transition: 0.4s;
   }
 
+  @media screen {
+    header .form {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(43, 39, 39, 0.507);
+      z-index: 9999;
+      /* overflow: auto; */
+      }
+    }
+
+  header .form div{
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    background: #fff;
+    border-radius: 9px;
+  }
+
+  header .form div input{
+    width: 250px;
+    height: 20px;
+    font-size: 14px;
+    position: relative;
+    margin: 5% auto;
+    margin-left: 50px;
+    padding: 15px 15px;
+    background: #fff;
+    border-radius: 9px;
+    border-color: #222;
+  }
+
+  header .form div textarea{
+    width: 250px;
+    height: 20px;
+    font-size: 14px;
+    position: relative;
+    margin: 5% auto;
+    margin-left: 50px;
+    padding: 15px 15px;
+    background: #fff;
+    border-radius: 9px;
+    border-color: #222;
+  }
+
+  header .form div input[type="submit"]{
+    width: 250px;
+    height: 20px;
+    font-size: 14px;
+    position: relative;
+    margin: 5% auto;
+    margin-left: 50px;
+    padding: 15px 15px;
+    background: #fff;
+    border-radius: 9px;
+    border-color: #222;
+  }
+
+  header .form div input:hover {
+    width: 250px;
+    height: 20px;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    margin: 6% auto;
+    margin-left: 50px;
+    padding: 15px 15px;
+    background: #222;
+    border-radius: 9px;
+    border-color: #222;
+    transition: 0.4s;
+  }
+
+  header .form .empty h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+  }
+
 .categories div {
     display: inline-block;
     background: #f2f2f2;

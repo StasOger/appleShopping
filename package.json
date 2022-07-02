@@ -2,7 +2,7 @@
   "name": "shop",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://StasOger.github.io/appleShop",
+  "homepage": "https://StasOger.github.io/appleShopping",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@reduxjs/toolkit": "^1.8.2",

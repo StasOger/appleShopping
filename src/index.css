@@ -199,8 +199,8 @@ header {
     width: 400px;
     position: relative;
     margin: 10% auto;
-    background: #fff;
-    border-radius: 9px;
+    background: rgb(239, 232, 232);
+    border-radius: 4px;
   }
 
   header .form div input{
@@ -209,58 +209,82 @@ header {
     font-size: 14px;
     position: relative;
     margin: 5% auto;
-    margin-left: 50px;
+    margin-left: 55px;
     padding: 15px 15px;
-    background: #fff;
-    border-radius: 9px;
-    border-color: #222;
+    background: rgb(239, 232, 232);
+    border-radius: 5px;
+    border-color: rgb(180, 180, 180);
   }
 
   header .form div textarea{
+    width: 283px;
+    height: 50px;
+    font-size: 14px;
+    margin: 5% auto;
+    margin-left: 55px;
+    padding: 15px 15px;
+    background: rgb(239, 232, 232);
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-color:rgb(180, 180, 180);
+  }
+
+  header .form div input:hover  {
     width: 250px;
     height: 20px;
     font-size: 14px;
-    position: relative;
-    margin: 5% auto;
-    margin-left: 50px;
+    color: rgb(239, 232, 232);
+    margin: 6% auto;
+    margin-left: 55px;
     padding: 15px 15px;
-    background: #fff;
-    border-radius: 9px;
-    border-color: #222;
+    background: rgb(67, 67, 67);
+    border-radius: 5px;
+    border-color: rgb(67, 67, 67);
+    transition: 0.4s;
   }
 
   header .form div input[type="submit"]{
-    width: 250px;
-    height: 20px;
+    width: 283px;
+    height: 50px;
     font-size: 14px;
-    position: relative;
+    text-align: center;
+    color: rgb(239, 232, 232);
     margin: 5% auto;
-    margin-left: 50px;
+    margin-left: 55px;
     padding: 15px 15px;
-    background: #fff;
-    border-radius: 9px;
-    border-color: #222;
+    background: rgb(63, 58, 58);
+    border: none;
+    border-radius: 5px;
+    border-color: rgb(67, 67, 67);
   }
 
-  header .form div input:hover {
-    width: 250px;
-    height: 20px;
+  header .form div input[type="submit"]:hover  {
+    width: 283px;
+    height: 50px;
     font-size: 14px;
-    color: #fff;
+    text-align: center;
+    color: rgb(239, 232, 232);
     position: relative;
     margin: 6% auto;
-    margin-left: 50px;
+    margin-left: 55px;
     padding: 15px 15px;
     background: #222;
-    border-radius: 9px;
+    border-radius: 5px;
     border-color: #222;
     transition: 0.4s;
   }
 
   header .form .empty h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-
+    width: 250px;
+    height: 20px;
+    font-size: 14px;
+    position: relative;
+    margin: 5% auto;
+    margin-left: 55px;
+    padding: 15px 15px;
+    background: rgb(239, 232, 232);
+    border-radius: 5px;
+    border-color: rgb(67, 67, 67);
   }
 
 .categories div {

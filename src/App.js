@@ -8,7 +8,7 @@ import ShowFullItem from './components/ShowFullItem';
 
 // import HomePage from './pages/HomePage';
 // import {Navigate} from 'react-router-dom';
-// import ContactUs from './components/contactForm';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -94,7 +94,7 @@ class App extends React.Component {
           
           {this.state.showFullItem && <ShowFullItem onShowItem={this.onShowItem} onAdd={this.addToOrder} item={this.state.fullItem}/>}
           <Footer/>
-          {/* <ContactUs/> */}
+          
           
         </div>
         
@@ -103,7 +103,7 @@ class App extends React.Component {
 
     onShowItem(item) {
       this.setState({fullItem: item})
-      this.setState({showFullItem: !this.state.showFullItem})
+      this.setState({showFullItem: this.state.showFullItem})
     }
 
     chooseCategory(category) {

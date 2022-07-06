@@ -11,6 +11,7 @@ export const ContactUs = () => {
       .then((result) => {
           console.log(result.text);
           console.log('message sent');
+          alert('message sent');
       }, (error) => {
           console.log(error.text);
       });
@@ -21,12 +22,12 @@ export const ContactUs = () => {
     <form ref={form} onSubmit={sendEmail}>
       <div name='form'>
         
-        <input type="text" name="user_name" placeholder='Name'/>
+        <input type="text" name="user_name" required placeholder='Name'/>
         
-        <input type="email" name="user_email" placeholder='Email'/>
+        <input type="email" name="user_email" required placeholder='Email'/>
         
-        <textarea name="message" placeholder='Message'/>
-        <input type="submit" value="Send" />
+        <textarea name="message" required placeholder='Message'/>
+        <input type="submit" value="Send" placeholder='Send'/>
       </div> 
     </form>
   );
